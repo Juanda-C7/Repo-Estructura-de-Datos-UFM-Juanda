@@ -1,4 +1,4 @@
-from queues.linear_queue.linear_queues import LinearQueue
+from linear_queues import LinearQueue
 
 
 # Queue instance

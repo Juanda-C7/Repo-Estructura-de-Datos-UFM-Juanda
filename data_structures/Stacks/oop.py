@@ -5,7 +5,7 @@ class Car:
 
     def __repr__(self):
         return f'Modelo: {self.model} | KM: {self.kms}'
-
+    @profile
     def broom(self, distance: int):
         self.kms += distance
 

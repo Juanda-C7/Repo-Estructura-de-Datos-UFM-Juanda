@@ -14,7 +14,7 @@ class Stack:
         
         self.top += 1
         self.elements[self.top] = val
-
+    
     def pop(self) -> any:
         if self.top == -1:
             print('Stack underflow')
