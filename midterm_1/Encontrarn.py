@@ -12,7 +12,7 @@ def encontrar_n_para_5_segundos():
         
         elapsed_time = time.time() - start_time  
         
-        if elapsed_time >= 5:
+        if elapsed_time >= 1:
             return n, elapsed_time  
         
         n += 5000  

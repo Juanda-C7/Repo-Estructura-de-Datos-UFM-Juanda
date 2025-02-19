@@ -1,7 +1,7 @@
 from stackp import Stack
 import time
 
-n = 56000000  # Valor de n encontrado previamente
+n = 5090000  # Valor de n encontrado previamente
 
 # Crear 5 stacks con tamaños n, 2n, 3n, 4n, 5n
 stacks = [Stack(i * n) for i in range(1, 6)]

@@ -31,3 +31,11 @@ class Stack:
             return None
 
         return self.elements[self.top]
+
+    def search(self, key: str) -> int:
+        """Busca un elemento en el stack y devuelve su índice desde la cima.
+        Retorna -1 si no se encuentra."""
+        for i in range(self.top, -1, -1):  # Buscar desde el top hacia abajo
+            if self.elements[i] == key:
+                return self.top - i  # Posición relativa desde la cima
+        return -1  # No encontrado
