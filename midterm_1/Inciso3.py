@@ -1,6 +1,7 @@
 from stackp import Stack
 import time
 
+
 n = 5090000  # Valor de n encontrado previamente
 
 # Crear 5 stacks con tamaños n, 2n, 3n, 4n, 5n
@@ -12,3 +13,13 @@ for stack in stacks:
         stack.push("X")
 
 print("Todos los stacks han sido poblados completamente.")
+
+#inciso 5
+
+
+def operations():
+    for stack in stacks:
+        stack.search("Y")  
+        stack.pop()  
+
+operations()

@@ -1,3 +1,4 @@
+from memory_profiler import profile
 class Stack:
     def __init__(self, size: int):
         self.max = size
@@ -14,7 +15,7 @@ class Stack:
         
         self.top += 1
         self.elements[self.top] = val
-    
+    #@profile
     def pop(self) -> any:
         if self.top == -1:
             print('Stack underflow')
@@ -31,11 +32,10 @@ class Stack:
             return None
 
         return self.elements[self.top]
-
+    @profile
     def search(self, key: str) -> int:
-        """Busca un elemento en el stack y devuelve su índice desde la cima.
-        Retorna -1 si no se encuentra."""
-        for i in range(self.top, -1, -1):  # Buscar desde el top hacia abajo
+        
+        for i in range(self.top, -1, -1):  
             if self.elements[i] == key:
-                return self.top - i  # Posición relativa desde la cima
-        return -1  # No encontrado
+                return self.top - i  
+        return -1  
