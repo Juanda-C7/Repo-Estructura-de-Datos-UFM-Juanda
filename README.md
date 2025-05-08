@@ -27,9 +27,12 @@ Los siguientes son ejemplos de codigo de distintas estucturas de datos vistas du
 ##### Notas Git
 
 git clone URL_DEL_REPOSITORIO
+
 cd repositorio
 
 
 git add .
+
 git commit -m "Commit"
+
 git push -u origin main
